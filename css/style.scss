@@ -89,29 +89,24 @@ body {
   background-color: $Very-Dark-Blue-main-BG;
 }
 
-/* .container {
-  background-color: $Very-Dark-Blue-main-BG;
-  margin: 0 auto; */
-}
-
 .card {
   background-color: $Very-Dark-Blue-card-BG;
-
-  max-width: 375px;
-  max-height: 667px;
-  margin: 3.875rem auto;
+  max-width: 327px;
+  max-height: 543px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card__main-image {
-  max-width: 278px;
-  max-height: 278px;
+  width: 278px;
+  height: 278px;
   margin: 0 auto;
-  padding-top:1.5rem;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  place-content: center;
 }
 
 .card__main-image img {
@@ -123,6 +118,7 @@ body {
   color: $white;
   font-weight: 600;
   line-height: 1.75rem;
+  margin: 1.75rem 1.75rem 0.75rem;
 }
 
 .card__product-description {
@@ -130,6 +126,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: $soft-blue;
+  margin: 0 1.75rem 1rem;
 }
 
 .card__product-price {
