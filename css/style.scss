@@ -179,3 +179,39 @@ body {
   text-align: center;
   margin: 1rem auto;
 }
+
+.card-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 5.2rem 1rem 1.75rem;
+}
+
+.card-avatar__image {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card-avatar__author {
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  color: $white;
+  &::before {
+    content: "Creation of";
+    display: block;
+    font-size: 0.9375rem;
+    line-height: 1.1875rem;
+
+    float: left;
+    color: $soft-blue;
+    margin: 0 0.31rem 0 0;
+  }
+}
