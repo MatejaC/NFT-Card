@@ -156,15 +156,17 @@ body {
   font-size: 0.9375rem;
   line-height: 1.1875rem;
   color: $soft-blue;
-   &::before {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  &::before {
     content: "";
-    display: block;
-    background: url("/assets/icon-clock.svg") no-repeat;
+    display: inline-block;
+    background: url("/assets/icon-clock.svg") no-repeat center center;
     width: 16px;
     height: 16px;
-    float: left;
     margin: 0 0.48rem 0 0;
-}
+  }
 }
 
 .card__horizontal-line::before {
