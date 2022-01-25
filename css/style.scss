@@ -166,3 +166,14 @@ body {
     margin: 0 0.48rem 0 0;
 }
 }
+
+.card__horizontal-line::before {
+  content: " ";
+  display: block;
+  height: 0.063rem;
+  background-color: $Very-Dark-Blue-line;
+  max-width: 17.375rem;
+  text-shadow: none;
+  text-align: center;
+  margin: 1rem auto;
+}

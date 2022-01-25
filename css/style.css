@@ -158,15 +158,74 @@ body {
   font-size: 0.9375rem;
   line-height: 1.1875rem;
   color: #8bacd9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .card__expiration-date::before {
   content: "";
-  display: block;
-  background: url("/assets/icon-clock.svg") no-repeat;
+  display: inline-block;
+  background: url("/assets/icon-clock.svg") no-repeat center center;
   width: 16px;
   height: 16px;
-  float: left;
   margin: 0 0.48rem 0 0;
+}
+
+.card__horizontal-line::before {
+  content: " ";
+  display: block;
+  height: 0.063rem;
+  background-color: #2e405a;
+  max-width: 17.375rem;
+  text-shadow: none;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.card-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 5.2rem 1rem 1.75rem;
+}
+
+.card-avatar__image {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card-avatar__author {
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card-avatar__author::before {
+  content: "Creation of";
+  display: block;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  float: left;
+  color: #8bacd9;
+  margin: 0 0.31rem 0 0;
 }
 /*# sourceMappingURL=style.css.map */
