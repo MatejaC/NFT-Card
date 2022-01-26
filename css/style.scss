@@ -134,10 +134,10 @@ body {
 }
 
 .card__product-price {
-  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 3vw, 1rem);
   color: $cyan;
   font-weight: 600;
-  line-height: 1.1875rem;
+  line-height: clamp(1.1875rem, 3vw, 1.25rem);
   &::before {
     content: "";
     display: block;
@@ -151,8 +151,8 @@ body {
 
 .card__expiration-date {
   font-weight: normal;
-  font-size: 0.9375rem;
-  line-height: 1.1875rem;
+  font-size: clamp(0.9375rem, 3vw, 1rem);
+  line-height: clamp(1.1875rem, 3vw, 1.25rem);
   color: $soft-blue;
   display: flex;
   align-items: center;
@@ -198,18 +198,24 @@ body {
 }
 
 .card-avatar__author {
-  font-size: 0.9375rem;
-  line-height: 1.1875rem;
+  font-size: clamp(0.9375rem, 3vw, 1rem);
+  line-height: clamp(1.1875rem, 3vw, 1.25rem);
   font-weight: 400;
   color: $white;
   &::before {
     content: "Creation of";
     display: block;
-    font-size: 0.9375rem;
-    line-height: 1.1875rem;
-
+    font-size: clamp(0.9375rem, 3vw, 1rem);
+    line-height: clamp(1.1875rem, 3vw, 1.25rem);
     float: left;
     color: $soft-blue;
     margin: 0 0.31rem 0 0;
   }
+}
+
+@media screen and (min-width:800px){
+  .card {
+  max-width: 350px;
+  max-height: 596px;
+} 
 }
