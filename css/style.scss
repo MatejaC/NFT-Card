@@ -115,6 +115,10 @@ body {
   font-weight: 600;
   line-height: 1.75rem;
   margin: 1.5rem 1.5rem 0.75rem;
+  &:hover{
+    color: $cyan;
+    cursor: pointer;
+  }
 }
 
 .card__product-description {
@@ -210,6 +214,12 @@ body {
     float: left;
     color: $soft-blue;
     margin: 0 0.31rem 0 0;
+  }
+}
+.card-avatar__author{
+  &:hover{
+    color: $cyan;
+    cursor: pointer;
   }
 }
 

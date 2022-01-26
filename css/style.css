@@ -116,6 +116,11 @@ body {
   margin: 1.5rem 1.5rem 0.75rem;
 }
 
+.card__product-name:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
 .card__product-description {
   font-weight: 300;
   font-style: normal;
@@ -229,6 +234,11 @@ body {
   float: left;
   color: #8bacd9;
   margin: 0 0.31rem 0 0;
+}
+
+.card-avatar__author:hover {
+  color: #00fff8;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
