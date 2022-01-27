@@ -88,6 +88,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
 }
 
 .card {
@@ -105,25 +106,22 @@ body {
   max-width: 278px;
   max-height: 278px;
   margin: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: relative;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .card__main-image:hover {
   cursor: pointer;
   background: #00fff8;
-  border-radius: .5rem;
-  /*filter: opacity(0.5) drop-shadow(0 0 0 #00fff8);
-  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #00fff8);
-  */
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .card__main-image:hover .card__main-image__icon {
@@ -141,11 +139,11 @@ body {
 
 .card__main-image--hover:hover {
   opacity: 0.5;
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .card__product-name {
@@ -193,7 +191,7 @@ body {
 .card__product-price::before {
   content: "";
   display: block;
-  background: url("/assets/icon-ethereum.svg") no-repeat;
+  background: url("../assets/icons/icon-ethereum.svg") no-repeat;
   width: 11px;
   height: 18px;
   float: left;
@@ -217,7 +215,7 @@ body {
 .card__expiration-date::before {
   content: "";
   display: inline-block;
-  background: url("/assets/icon-clock.svg") no-repeat center center;
+  background: url("../assets/icons/icon-clock.svg") no-repeat;
   width: 16px;
   height: 16px;
   margin: 0 0.48rem 0 0;
